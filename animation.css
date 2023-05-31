@@ -1,0 +1,31 @@
+.ball {
+  background-color: darkgoldenrod;
+  width: 5rem;
+  height: 5rem;
+
+  border-radius: 99999999999px;
+}
+
+.animation {
+  animation-name: movingBall;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+  /* 
+  animation-delay: ;
+  */
+}
+
+@keyframes movingBall {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}

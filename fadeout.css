@@ -1,0 +1,18 @@
+.fadeout {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  /* transition-delay: ; */
+
+  opacity: 1;
+  background-color: blueviolet;
+}
+
+.fadeout:hover {
+  opacity: 0;
+  background-color: chartreuse;
+}
+
+.transition-text:hover {
+  color: crimson;
+}

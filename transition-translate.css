@@ -1,0 +1,14 @@
+.escape-container {
+  overflow: hidden;
+
+
+  background-color: coral;
+}
+
+.escape {
+  transition: translate 2s linear;
+}
+
+.escape:hover {
+  translate: 100vw;
+}

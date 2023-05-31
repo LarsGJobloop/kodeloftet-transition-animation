@@ -1,0 +1,16 @@
+/* Not important here */
+body {
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main:nth-child(2n) {
+  background-color: cadetblue;
+}
+
+section {
+  min-height: 100vh;
+}

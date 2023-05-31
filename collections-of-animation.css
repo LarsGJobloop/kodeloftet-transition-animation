@@ -1,0 +1,42 @@
+.rotate {
+
+}
+
+@keyframes rotate {
+  
+}
+
+/*
+  Her har vi dradd ut gradienten vi bruker i en css variabel
+  For å legge til fancy-tekst-color klassen vår så må vi no og bruke
+  
+*/
+.gradient-basic {
+  --gradient: 90deg, rgba(105,105,186,1) 0%, rgba(235,141,0,1) 25%, rgba(214,0,255,1) 49%, rgba(0,212,255,1) 50%, rgba(0,212,255,1) 100%;
+}
+
+.gradient-alternative {
+  --gradient: 90deg, rgba(105,105,186,1) 0%, rgba(0,235,11,1) 25%, rgba(249,255,0,1) 49%, rgba(0,212,255,1) 50%, rgba(0,212,255,1) 100%;
+}
+
+/* denne er nå mer gjennburkbar */
+.fancy-text-color {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  background: linear-gradient(var(--gradient));
+
+  -webkit-background-clip: text;
+  background-size: 200% auto;
+
+  animation: fancyTextColor 4s linear infinite;
+}
+
+@keyframes fancyTextColor {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
